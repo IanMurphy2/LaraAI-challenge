@@ -1,0 +1,18 @@
+{
+    "global":
+        {
+            "nextButton": "Next",
+            "backButton": "Back",
+            "submitButton": "Submit answers"
+        },
+    "presentation":
+        {
+            "startButton": "START",
+             "errorMessage":  "The form with id {{id}} does not exist"
+        },
+    "npsQuestion":
+        {
+            "negativeLabel": "Never",
+            "positiveLabel": "Extremely likely"
+        }
+}

@@ -1,0 +1,166 @@
+
+{
+    "success": true,
+    "data":
+    [
+        {
+            "language": "en",
+            "id": 1,
+            "answered": false,
+            "amountOfQuestions": 4,
+            "presentation": {
+                "title": "Hola Sofía! 😄",
+                "paragraphs": [
+                    "Espero que estés teniendo un excelente día, te estoy contactando para que podamos saber sobre tu experiencia en Tesla.",
+                    "Recuerda que lo que respondas va a ser manejado con extricta confidencialidad y tu líder no podrá ver las respuestas."
+                ],
+                "buttons": [
+                    {
+                        "buttonTitle": "¿Quién tiene acceso?",
+                        "modalParagraphs":
+                            "Los siguientes roles en Tesla son los únicos que tendrán acceso a nuestras conversaciones:# ✅HR Director (Holly Flax)#✅ HRBP (Toby Flenderson)#Tu lider no tendrá acceso a tus respuestas, únicamente tendrá acceso a ver resultados grupales, con un mínimo de 3 respuestas."
+                    },
+                    {
+                        "buttonTitle": "¿Por qué preguntas?",
+                        "modalParagraphs":
+                            "Los siguientes roles en Tesla son los únicos que tendrán acceso a nuestras conversaciones:# ✅HR Director (Holly Flax)#✅ HRBP (Toby Flenderson)#Tu lider no tendrá acceso a tus respuestas, únicamente tendrá acceso a ver resultados grupales, con un mínimo de 3 respuestas."
+                    }
+                ]
+            },
+            "questions": [
+                {
+                    "id": 1,
+                    "questionType": "text",
+                    "questionText": "What do you think about our product?"
+                },
+                {
+                    "id": 2,
+                    "questionType": "nps",
+                    "questionText": "En una escala del 0 al 10, ¿qué tan probable es que recomiendes a un amigo/a o familiar trabajar en Tesla?",
+                    "extraQuestion": true,
+                    "extraQuestionCondition": "negative",
+                    "extraQuestionText": "Gracias por compartirlo. ¿Qué harías diferente en Tesla?"
+                },
+                {
+                    "id": 3,
+                    "questionType": "mood",
+                    "questionText": "¿Cómo fue tu experiencia en Tesla el último mes?",
+                    "extraQuestion": true,
+                    "extraQuestionCondition": "negative",
+                    "extraQuestionText": "Gracias por compartirlo. ¿Qué harías diferente en Tesla?"
+                },
+                {
+                    "id": 4,
+                    "questionType": "options",
+                    "questionText": "Which features do you use the most?",
+                    "questionOptions": [
+                        { "id": 1, "order": 1, "title": "Feature A" },
+                        { "id": 4, "order": 4, "title": "Feature D" },
+                        { "id": 3, "order": 3, "title": "Feature Casd" },
+                        { "id": 2, "order": 2, "title": "Feature B asdasd" },
+                        { "id": 5, "order": 5, "title": "Feature E asdasd" }
+                    ],
+                    "extraQuestion": true,
+                    "extraQuestionCondition": "negative",
+                    "extraQuestionText": "Gracias por compartirlo. ¿Qué harías diferente en Tesla?"
+                }
+            ],
+            "ending": {
+                "title": "Thank you for your feedback!",
+                "paragraphs": ["We appreciate you taking the time to help us improve our product and services."]
+            }
+        },
+        {
+            "language": "es",
+            "id": 2,
+            "answered": false,
+            "amountOfQuestions": 5,
+            "presentation": {
+                "title": "Hola Juan! 😄",
+                "paragraphs": [
+                    "Espero que estés teniendo un excelente día, te estoy contactando para que podamos saber sobre tu experiencia en Tesla.",
+                    "Recuerda que lo que respondas va a ser manejado con extricta confidencialidad y tu líder no podrá ver las respuestas."
+                ],
+                "buttons": [
+                    {
+                        "buttonTitle": "¿Por qué preguntas?",
+                        "modalParagraphs":
+                            "Los siguientes roles en Tesla son los únicos que tendrán acceso a nuestras conversaciones:# ✅HR Director (Holly Flax)#✅ HRBP (Toby Flenderson)#Tu lider no tendrá acceso a tus respuestas, únicamente tendrá acceso a ver resultados grupales, con un mínimo de 3 respuestas."
+                    },
+                    {
+                        "buttonTitle": "¿Quién tiene acceso?",
+                        "modalParagraphs":
+                            "Los siguientes roles en Tesla son los únicos que tendrán acceso a nuestras conversaciones:# ✅HR Director (Holly Flax)#✅ HRBP (Toby Flenderson)#Tu lider no tendrá acceso a tus respuestas, únicamente tendrá acceso a ver resultados grupales, con un mínimo de 3 respuestas."
+                    }
+                ]
+            },
+            "questions": [
+              
+                {
+                    "id": 1,
+                    "questionType": "nps",
+                    "questionText": "En una escala del 0 al 10, ¿qué tan probable es que recomiendes a un amigo/a o familiar trabajar en Tesla?",
+                    "extraQuestion": true,
+                    "extraQuestionCondition": "negative",
+                    "extraQuestionText": "Gracias por compartirlo. ¿Qué harías diferente en Tesla?"
+                },
+                {
+                    "id": 2,
+                    "questionType": "mood",
+                    "questionText": "¿Cómo fue tu experiencia en Tesla el último mes?",
+                    "extraQuestion": true,
+                    "extraQuestionCondition": "negative",
+                    "extraQuestionText": "Gracias por compartirlo. ¿Qué harías diferente en Tesla?"
+                },
+                {
+                    "id": 3,
+                    "questionType": "options",
+                    "questionText": "Which features do you use the most?",
+                    "questionOptions": [
+                        { "id": 1, "order": 1, "title": "Feature A" },
+                        { "id": 4, "order": 4, "title": "Feature D" },
+                        { "id": 3, "order": 3, "title": "Feature Casd" },
+                        { "id": 2, "order": 2, "title": "Feature B asdasd" },
+                        { "id": 5, "order": 5, "title": "Feature E asdasd" }
+                    ],
+                    "extraQuestion": true,
+                    "extraQuestionCondition": "negative",
+                    "extraQuestionText": "Gracias por compartirlo. ¿Qué harías diferente en Tesla?"
+                },
+                {
+                    "id": 4,
+                    "questionType": "options",
+                    "questionText": "Which features do you use the most?",
+                    "questionOptions": [
+                        { "id": 1, "order": 1, "title": "1" },
+                        { "id": 4, "order": 4, "title": "2" },
+                        { "id": 3, "order": 3, "title": "3" },
+                        { "id": 2, "order": 2, "title": "4" },
+                        { "id": 5, "order": 5, "title": "5" }
+                    ],
+                    "extraQuestion": true,
+                    "extraQuestionCondition": "negative",
+                    "extraQuestionText": "Gracias por compartirlo. ¿Qué harías diferente en Tesla?"
+                },
+                {
+                    "id": 5,
+                    "questionType": "text",
+                    "questionText": "What do you think about our product?"
+                }
+            ],
+            "ending": {
+                "title": "Thank you for your feedback!",
+                "paragraphs": ["We appreciate you taking the time to help us improve our product and services."]
+            }
+        },
+        {
+            "language": "es",
+            "id": 3,
+            "answered": true,
+            "ending": {
+                "title": "Thank you for your feedback!",
+                "paragraphs": ["We appreciate you taking the time to help us improve our product and services."]
+            }
+        }
+    ]
+}

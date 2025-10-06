@@ -1,0 +1,18 @@
+{
+    "global":
+        {
+            "nextButton": "Siguiente",
+            "backButton": "Atrás",
+            "submitButton": "Enviar respuesta"
+        },
+    "presentation":
+        {
+            "startButton": "COMENZAR",
+            "errorMessage":  "El formulario con id {{id}} no existe"
+        },
+    "npsQuestion":
+        {
+            "negativeLabel": "Núnca lo haría",
+            "positiveLabel": "Extremadamente probable"
+        }
+}
