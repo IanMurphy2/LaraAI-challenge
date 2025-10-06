@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# LaraAi Challenge - Sistema de Gestión de Respuestas Inteligente
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción
 
-Currently, two official plugins are available:
+LaraAi Challenge es una aplicación web desarrollada con **React** y **TypeScript** que implementa un sistema inteligente de gestión de respuestas y cuestionarios. El proyecto utiliza Context API para el manejo de estado global y está diseñado con una arquitectura modular y escalable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características Principales
 
-## React Compiler
+- 🎯 **Gestión de Cuestionarios**: Sistema completo para manejar diferentes tipos de preguntas y respuestas
+- 📊 **Manejo de Estado Avanzado**: Implementación con Context API para una gestión eficiente del estado
+- 🔧 **TypeScript**: Desarrollo con tipado fuerte para mayor robustez y mantenibilidad
+- 🎨 **Interfaz Moderna**: Diseño responsive y user-friendly
+- 📝 **Respuestas Adicionales**: Funcionalidad para agregar información extra a las respuestas
+- 🔄 **Actualizaciones en Tiempo Real**: Sistema de actualización dinámico de respuestas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- **React 18+**
+- **TypeScript**
+- **Context API**
+- **CSS3/SCSS** (para estilos)
+- **ES6+**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Explicacion de decisciones tecnicas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+** Carpetas **
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
