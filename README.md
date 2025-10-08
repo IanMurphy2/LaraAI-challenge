@@ -89,3 +89,14 @@ LaraAi Challenge es una aplicación web desarrollada con **React** y **TypeScrip
       extraAnswer?: string;
   };
 
+
+**Levantar el proyecto**
+
+1. Clonar el proyecto en local
+2. ejecutar npm i
+3. ejecutar npm run dev
+
+Cabe destacar que en la url hay que escribir el id del formulario, en los datos mockeados hay solo 3
+Id 1 -> Sofia
+Id 2 -> Juan
+Id 3 -> Formulario ya respondido
