@@ -35,7 +35,7 @@ export const SendButton = ({ isDisabled = false }: IProps) => {
     return (
         <>
             {questionToShow === questionsAmount && (
-                <div className="flex justify-end mt-10">
+                <div className="flex justify-end my-10">
                     <Button variant="contained" color="primary" className={buttonPulse ? "animate-pulse" : ""} disabled={isDisabled} onClick={handleSend}>
                         {t("global.submitButton")}
                     </Button>

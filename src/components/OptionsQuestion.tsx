@@ -57,7 +57,7 @@ export const OptionsQuestion = ({ question }: IProps) => {
     };
 
     return (
-        <section className="flex flex-col gap-5 w-6/12">
+        <section className="flex flex-col gap-5 w-10/12 sm:w-6/12 h-full">
             <Typography variant="h2" component="h2">
                 {question.questionText} <span className="text-[#D14343]">*</span>
             </Typography>

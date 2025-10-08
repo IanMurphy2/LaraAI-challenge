@@ -52,11 +52,15 @@ export const NpsQuestion = ({ question }: IProps) => {
     };
 
     return (
-        <section className="flex flex-col gap-5 w-6/12 items-center">
+        <section className="flex flex-col gap-5 w-10/12 sm:w-6/12 items-center py-10">
             <Typography variant="h2" component="h2">
                 {question.questionText} <span className="text-[#D14343]">*</span>
             </Typography>
             <div className="flex flex-col gap-2 w-fit max-w-[50rem] items-center justify-center">
+                <div className="fles flex-col md:hidden justify-between w-full">
+                    <h6>1 - {t("npsQuestion.negativeLabel")}</h6>
+                    <h6>10 - {t("npsQuestion.positiveLabel")}</h6>
+                </div>
                 <div className="flex justify-center flex-wrap gap-2">
                     {numbers.map((option, index) => (
                         <Button
@@ -74,7 +78,7 @@ export const NpsQuestion = ({ question }: IProps) => {
                         </Button>
                     ))}
                 </div>
-                <div className="flex justify-between w-full">
+                <div className="hidden md:flex justify-between w-full">
                     <h6>{t("npsQuestion.negativeLabel")}</h6>
                     <h6>{t("npsQuestion.positiveLabel")}</h6>
                 </div>

@@ -30,13 +30,19 @@ export const theme = createTheme({
                         backgroundColor: mainColor,
                         color: "#fff",
                         fontSize: "16px",
-                        padding: "8px 20px",
                         "&:hover": {
                             backgroundColor: "#3f3acb",
                         },
                         "&.Mui-disabled": {
                             backgroundColor: "#E0E0E0",
                             color: "#9E9E9E",
+                        },
+                        padding: "4px 6px",
+                        "@media (min-width:600px)": {
+                            padding: "5px 8px",
+                        },
+                        "@media (min-width:900px)": {
+                            padding: "6px 12px",
                         },
                     },
                 },
@@ -48,16 +54,26 @@ export const theme = createTheme({
                         backgroundColor: "#5048E514",
                         color: "#000",
                         textTransform: "none",
-                        fontSize: "24px",
                         fontWeight: 500,
                         justifyContent: "flex-center",
-                        gap: "8px",
                         width: "fit-content",
                         boxShadow: "none",
-                        padding: "6px 12px",
                         "&:hover": {
                             backgroundColor: "#6b5bff54",
                             boxShadow: "none",
+                        },
+                        gap: "5px",
+                        padding: "4px 6px",
+                        fontSize: "16px",
+                        "@media (min-width:600px)": {
+                            gap: "6px",
+                            padding: "5px 8px",
+                            fontSize: "18px",
+                        },
+                        "@media (min-width:900px)": {
+                            gap: "8px",
+                            padding: "6px 12px",
+                            fontSize: "24px",
                         },
                     },
                 },
@@ -96,7 +112,13 @@ export const theme = createTheme({
                     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
                         borderColor: mainColor,
                     },
-                    height: 56,
+                    height: 30,
+                    "@media (min-width:600px)": {
+                        height: 45,
+                    },
+                    "@media (min-width:900px)": {
+                        height: 56,
+                    },
                 },
                 input: {
                     padding: "0 12px",
@@ -107,10 +129,16 @@ export const theme = createTheme({
     typography: {
         fontFamily: "Inter, Arial, sans-serif",
         h2: {
-            fontSize: "32px",
+            fontSize: "20px",
             fontWeight: 400,
             lineHeight: "138%",
             letterSpacing: "0px",
+            "@media (min-width:600px)": {
+                fontSize: "28px",
+            },
+            "@media (min-width:900px)": {
+                fontSize: "32px",
+            },
         },
         body1: {
             fontSize: "24px",
@@ -118,6 +146,12 @@ export const theme = createTheme({
             lineHeight: "138%",
             letterSpacing: "0px",
             textAlign: "center",
+            "@media (min-width:600px)": {
+                fontSize: "20px",
+            },
+            "@media (min-width:900px)": {
+                fontSize: "24px",
+            },
         },
     },
 });

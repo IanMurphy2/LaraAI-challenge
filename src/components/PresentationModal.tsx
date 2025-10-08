@@ -20,16 +20,16 @@ export const PresentationModal = ({ modalIsOpen, setModalIsOpen, modalText }: IP
         <AnimatePresence>
             {modalIsOpen && (
                 <motion.div
-                    className="z-20 fixed flex justify-center items-center w-screen h-screen curson-pointer"
+                    className="z-40 fixed top-10 sm:top-40 flex justify-center items-start w-screen h-screen overflow-y-scroll"
                     initial={{ y: "100vh" }}
                     animate={{ y: 0 }}
                     exit={{ y: "100vh" }}
                     transition={{ duration: 0.5 }}
                 >
-                    <div className="bg-white rounded-xl w-fit max-w-140 h-fit p-5 flex flex-col gap-6 z-30 shadow-2xl border-2 border-[#5048E5]">
+                    <div className="bg-white rounded-xl w-10/12 sm:w-fit max-w-140 p-5 flex flex-col gap-6 z-30 shadow-2xl border-2 border-[#5048E5]">
                         <TextWithBreaks text={modalText} />
                         <div className="flex justify-end">
-                            <Button variant="contained" color="primary" onClick={() => setModalIsOpen(false)}>
+                            <Button variant="contained" color="primary" className="!w-full sm:!w-fit" onClick={() => setModalIsOpen(false)}>
                                 Cerrar
                             </Button>
                         </div>

@@ -44,7 +44,7 @@ export const PresentationComponent = ({ presentation }: IProps) => {
     return (
         <>
             <PresentationModal modalIsOpen={isModalOpen} setModalIsOpen={setIsModalOpen} modalText={modalText} />
-            <div className="flex flex-col justify-center items-center gap-10 w-6/12">
+            <div className="flex flex-col justify-center items-center gap-10 w-10/12 sm:w-6/12">
                 <Typography variant="h2" component="h2">
                     {presentation.title}
                 </Typography>

@@ -41,11 +41,11 @@ export const MoodQuestion = ({ question }: IProps) => {
     };
 
     return (
-        <section className="flex flex-col gap-5">
+        <section className="flex flex-col gap-5 w-10/12 sm:w-6/12 py-10">
             <Typography variant="h2" component="h2">
                 {question.questionText} <span className="text-[#D14343]">*</span>
             </Typography>
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-2">
                 {OptionQuestionValues.map((option, index) => (
                     <Button
                         key={index}

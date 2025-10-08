@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import type { IquestionResponse } from "../types";
 
 async function fetchFormInfo() {
@@ -32,21 +32,10 @@ export function useFormInfoById(id: number) {
     });
 }
 
-// export function usePostFormInfo() {
-//     const queryClient = useQueryClient();
-//     return useMutation({
-//         mutationFn: async (newQuestion) => {
-//             console.log("Simulating POST:", newQuestion);
-//             return { ...newQuestion, id: Date.now() };
-//         },
-//         onSuccess: (data) => {
-//             queryClient.setQueryData(["formInfo"], (old) => {
-//                 if (!old) return old;
-//                 return {
-//                     ...old,
-//                     questions: [...old.questions, data],
-//                 };
-//             });
-//         },
-//     });
-// }
+export function usePostFormInfo() {
+    return useMutation({
+        mutationFn: async (newQuestion) => {
+            console.log(newQuestion);
+        },
+    });
+}

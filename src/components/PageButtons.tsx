@@ -23,16 +23,16 @@ export const PageButtons = ({ isBackDisabled = false, isForwardDisabled = false 
     };
 
     return (
-        <div className="absolute bottom-10 flex gap-4 right-10">
+        <div className="fixed bottom-10 flex gap-4 right-10">
             {questionToShow != 1 && (
                 <Button disabled={isBackDisabled} onClick={handlePreviousQuestion} variant="contained" color="primary">
                     <ArrowBackIosIcon />
-                    {t("global.backButton")}
+                    <span className="hidden sm:flex">{t("global.backButton")}</span>
                 </Button>
             )}
             {questionToShow != questionsAmount && (
                 <Button disabled={isForwardDisabled} onClick={handleNextQuestion} variant="contained" color="primary">
-                    {t("global.nextButton")}
+                    <span className="hidden sm:flex">{t("global.nextButton")}</span>
                     <ArrowForwardIosIcon />
                 </Button>
             )}

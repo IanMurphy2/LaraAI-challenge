@@ -37,12 +37,12 @@ const MainForm = () => {
             </div>
         );
     }
-
+  
     return (
-        <main className="bg-[#F3F0FF] h-screen w-screen flex items-center justify-center">
+        <main className="bg-[#F3F0FF] h-screen w-screen flex items-center justify-center py-10">
             {questionToShow == 0 && !answered && <PresentationComponent presentation={presentation} />}
             {questionToShow > 0 && questionToShow < questionsLength + 1 && !answered && getQuestionComponent(questions[questionToShow - 1])}
-            {questionToShow === questionsLength + 1 || (answered && <EndingComponent ending={ending} />)}
+            {(questionToShow === questionsLength + 1 || answered) && <EndingComponent ending={ending} />}
         </main>
     );
 };

@@ -22,7 +22,7 @@ export const TextQuestion = ({ question }: IProps) => {
     }, [debaunceValue]);
 
     return (
-        <section className="flex flex-col gap-10 w-6/12">
+        <section className="flex flex-col gap-3 sm:gap-10 w-10/12 sm:w-6/12">
             <Typography variant="h2" component="h2">
                 {question.questionText}
             </Typography>
